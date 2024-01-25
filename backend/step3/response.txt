@@ -1,0 +1,12 @@
+For code quality, you can use some tools : which one and why (in a few words) ?
+
+ESLINT or other for any language, to keep a same indentation and code style with other developers.
+
+
+you can consider to setup a ci/cd process : describe the necessary actions in a few words
+
+Use github to setup automated test when a code was commit and push into a branch.
+The commit check if ESLINT is valid.
+For a deployment can use docker containerization any processus
+setup a monitoring and set alert
+Take update documentation.

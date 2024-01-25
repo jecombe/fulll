@@ -1,58 +1,5 @@
 const { Given, When, Then } = require("cucumber");
-
-class Vehicle {
-  constructor(mode, immatriculation, usr) {
-    this.mode = mode;
-    this.immatriculation = immatriculation;
-    this.usr = usr;
-    this.isParked = false;
-  }
-}
-
-class User {
-  constructor(name) {
-    this.name = name;
-    this.fleet = new Fleet(this);
-  }
-}
-
-class Fleet {
-  constructor() {
-    this.vehicleFleet = new Set();
-  }
-
-  registerVehicle(vehicle) {
-    if (this.vehicleFleet.has(vehicle)) {
-      return false;
-    } else {
-      this.vehicleFleet.add(vehicle);
-      return true;
-    }
-  }
-
-  hasVehicle(vehicle) {
-    return this.vehicleFleet.has(vehicle);
-  }
-}
-
-class FleetManager {
-  constructor() {
-    this.users = [];
-  }
-
-  setUser(user) {
-    this.users.push(user);
-  }
-
-  isVehicleInFleetByOtherUser(vehicle, userActual) {
-    for (const user of this.users) {
-      if (user.fleet.hasVehicle(vehicle) && user.name !== userActual.name) {
-        return true;
-      }
-    }
-    return false;
-  }
-}
+const { User, Vehicle, FleetManager } = require("./objects/Objects");
 
 let usr;
 let usr2;
