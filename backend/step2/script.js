@@ -49,12 +49,6 @@ class Fleet {
   }
 
   localizeVehicle(fleetId, vehicleId, lat, lng, alt) {
-    console.log(
-      ":::::::::::::::::::::",
-      this.fleetData[fleetId],
-      fleetId,
-      vehicleId
-    );
     if (
       !this.fleetData[fleetId] ||
       !this.fleetData[fleetId].vehicles[vehicleId]
