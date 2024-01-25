@@ -4,6 +4,18 @@
 npm i
 ```
 
+# Part 1
+
+```bash
+cd algo
+```
+
+```bash
+node fizzBuzz.js
+```
+
+# Part 2
+
 ## Step 1
 
 ```bash
