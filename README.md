@@ -1,9 +1,5 @@
 # Test
 
-```bash
-npm i
-```
-
 # Part 1
 
 ```bash
@@ -15,6 +11,14 @@ node fizzBuzz.js
 ```
 
 # Part 2
+
+```bash
+cd backend
+```
+
+```bash
+npm i
+```
 
 ## Step 1
 
